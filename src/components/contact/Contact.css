@@ -29,6 +29,7 @@ textarea {
   border: 1px solid var(--color-normal);
 }
 label {
+  margin-top: 5px;
   color: var(--color-light);
 }
 
@@ -39,6 +40,7 @@ input[type="submit"] {
   border: none;
   background-color: var(--color-light);
   font-weight: var(--font-weight-heavy);
+  font-family: "Poppins", sans-serif;
 }
 
 input[type="submit"]:hover {

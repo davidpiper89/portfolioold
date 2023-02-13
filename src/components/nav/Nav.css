@@ -12,6 +12,9 @@ li:hover {
   list-style: inside;
   padding-top: 4px;
   padding-bottom: 4px;
-
 }
 
+.nav_list {
+  position: sticky;
+  top: 0px;
+}

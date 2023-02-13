@@ -12,7 +12,7 @@ const About = () => {
           5+ year history of working within the NHS.
         </p>
         <p>
-          See their website on &nbsp;:&nbsp;
+          See their website &nbsp;:&nbsp;
           <a className="link" href="https://www.thejump.tech/" target="_blank">
             The Jump Digital School Website
           </a>

@@ -2,7 +2,6 @@ import React from "react";
 import "./Nav.css";
 import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
-import { AiOutlineMail } from "react-icons/ai";
 
 const Nav = () => {
   return (
@@ -17,26 +16,25 @@ const Nav = () => {
         <a href="#other_projects">
           <li>Other Projects</li>
         </a>
-        <a href="contact">
+        <a href="#contact">
           <li>Contact </li>
         </a>
-      </ul>
-      <ul className="icons">
-        <a href="https://www.linkedin.com/in/david-piper-47911225b/" target="_blank">
-          <li>
-            <BsLinkedin />
-          </li>
-        </a>
-        <a href="https://github.com/davidpiper89" target="_blank">
-          <li>
-            <BsGithub />
-          </li>
-        </a>
-        <a href="https://www.linkedin.com/in/david-piper-47911225b/" target="_blank">
-          <li>
-            <AiOutlineMail />
-          </li>
-        </a>
+
+        <ul className="icons">
+          <a
+            href="https://www.linkedin.com/in/david-piper-47911225b/"
+            target="_blank"
+          >
+            <li>
+              <BsLinkedin />
+            </li>
+          </a>
+          <a href="https://github.com/davidpiper89" target="_blank">
+            <li>
+              <BsGithub />
+            </li>
+          </a>
+        </ul>
       </ul>
     </>
   );
