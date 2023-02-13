@@ -16,5 +16,5 @@ li:hover {
 
 .nav_list {
   position: sticky;
-  top: 0px;
+  top: 10px;
 }
