@@ -46,7 +46,6 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: var(--color-normal);
   color: var(--color-light);
-  transition: var(--transition);
   border: 2px solid var(--color-normal);
 }
 .send_button {
