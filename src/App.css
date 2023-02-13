@@ -1,0 +1,21 @@
+.content_container {
+  display: flex;
+}
+.nav_list {
+  margin-top: 25px;
+  width: 160px;
+}
+
+header {
+  margin-bottom: 25px;
+  margin-left: 160px;
+}
+
+section {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.link:hover {
+  color: var(--color-light);
+}

@@ -1,0 +1,17 @@
+.nav_list > a > li {
+  list-style: circle;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+li:hover {
+  color: var(--color-light);
+}
+
+.icons > a > li {
+  list-style: inside;
+  padding-top: 4px;
+  padding-bottom: 4px;
+
+}
+
