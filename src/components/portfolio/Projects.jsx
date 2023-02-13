@@ -15,7 +15,7 @@ const Projects = () => {
       demo: "",
       info: "",
       skills:
-        "Visual Studios Code, Functional React.js, React Redux, Axios, Node.js",
+        "Functional React.js, React Redux, Axios, Node.js",
     },
     {
       id: 2,
@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Weather App",
       github: "https://github.com/davidpiper89/weatherproject",
       demo: "",
-      skills: "VSC, Functional React.js, React Redux, Axios, Node.js",
+      skills: "Functional React.js, React Redux, Axios, Node.js",
     },
     {
       id: 3,
@@ -32,7 +32,7 @@ const Projects = () => {
       github:
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
       demo: "",
-      skills: "VSC, React.js, React Redux, Axios, CSS, Joi, React Webcam",
+      skills: "React.js, React Redux, Axios, CSS, Joi, React Webcam",
     },
     {
       id: 4,
@@ -42,7 +42,7 @@ const Projects = () => {
         "https://github.com/davidpiper89/FunctionalBasedReactReduxSimpsons",
       demo: "",
       skills:
-        "VSC, Javascript, Axios, Express, CRUD, Middleware, Nodemailer, MySQL, pHpMyAdmin, Insomnia, FileZilla",
+        "Javascript, Axios, Express, CRUD, Middleware, Nodemailer, MySQL, pHpMyAdmin, Insomnia, FileZilla",
     },
     {
       id: 5,
@@ -50,7 +50,7 @@ const Projects = () => {
       title: "Blackjack App",
       github: "https://github.com/davidpiper89/piperscasino",
       demo: "",
-      skills: "VSC,Functional React.js, React Redux, Axios, Node.js",
+      skills: "Functional React.js, React Redux, Axios, Node.js",
     },
   ];
 
