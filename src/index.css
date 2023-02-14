@@ -71,11 +71,22 @@ p {
   margin: 50px;
 }
 
-
 /* Media queries (medium devices) */
+@media screen and (max-width: 2000px) {
+  .container {
+    width: 1440px;
+  }
+  header {
+    margin-left: 160px;
+  }
+}
+
 @media screen and (max-width: 1440px) {
   .container {
     width: 88%;
+  }
+  header {
+    margin-left: 160px;
   }
 }
 
@@ -84,6 +95,9 @@ p {
   .container {
     width: 88%;
   }
+  header {
+    margin-left: 160px;
+  }
 }
 
 /* Media queries (small devices) */
@@ -91,5 +105,18 @@ p {
 @media screen and (max-width: 600px) {
   .container {
     width: 75%;
+  }
+  header {
+    margin-left: 160px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .content_container {
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    margin-left: 0px;
   }
 }

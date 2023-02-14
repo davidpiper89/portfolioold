@@ -24,12 +24,17 @@ const Nav = () => {
           <a
             href="https://www.linkedin.com/in/david-piper-47911225b/"
             target="_blank"
+            rel="noreferrer"
           >
             <li>
               <BsLinkedin />
             </li>
           </a>
-          <a href="https://github.com/davidpiper89" target="_blank">
+          <a
+            href="https://github.com/davidpiper89"
+            target="_blank"
+            rel="noreferrer"
+          >
             <li>
               <BsGithub />
             </li>

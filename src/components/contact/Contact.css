@@ -47,8 +47,10 @@ input[type="submit"]:hover {
   background-color: var(--color-normal);
   color: var(--color-light);
   border: 2px solid var(--color-normal);
+  transition: var(--transition);
 }
 .send_button {
   display: flex;
   justify-content: center;
+  
 }

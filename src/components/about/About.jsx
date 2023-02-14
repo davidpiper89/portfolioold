@@ -13,12 +13,12 @@ const About = () => {
         </p>
         <p>
           See their website &nbsp;:&nbsp;
-          <a className="link" href="https://www.thejump.tech/" target="_blank">
+          <a className="link" href="https://www.thejump.tech/" target="_blank" rel="noreferrer">
             The Jump Digital School Website
           </a>
         </p>
         <p>
-          I have learned front end skills in HTML5, CSS / SASS JavaScipt and
+          I have learned front end skills in HTML5, CSS / SASS, JavaScipt and
           TypeScript. Worked with a team and individually using the JavaScript
           library 'React.js'.
         </p>{" "}
@@ -28,7 +28,7 @@ const About = () => {
           the Web Application framework 'Express'. The use of SQL to comminicate
           with relational databases and NoSQL with a non-relational model such
           as MongoDB. Additional knowledge of Redis in memory data structure
-          store and Firebase reealtime cloud-hosted database.
+          store and Firebase realtime cloud-hosted database.
         </p>
         <p>
           I have really enjoyed working on these projects and hope I can work on

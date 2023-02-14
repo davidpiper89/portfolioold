@@ -23,7 +23,7 @@ const Projects = () => {
       title: "Weather App",
       github: "https://github.com/davidpiper89/weatherproject",
       demo: "",
-      skills: "Functional React.js, React Redux, Axios, Node.js",
+      skills: "HTML5, CSS, JavaScript",
     },
     {
       id: 3,
