@@ -111,7 +111,7 @@ p {
     flex-direction: column;
   }
   .container {
-    margin: 12px;
+    margin: auto;
   }
 
   .form_input {
