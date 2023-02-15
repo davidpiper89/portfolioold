@@ -32,13 +32,13 @@ const Contact = () => {
         <h1 className="contact_title">Contact</h1>
         <form ref={form} onSubmit={sendEmail} className="form">
           <label>Name</label>
-          <input type="text" name="user_name" />
+          <input className="form_input" type="text" name="user_name" />
           <label>Email</label>
-          <input type="email" name="user_email" />
+          <input className="form_input" type="email" name="user_email" />
           <label>Message</label>
-          <textarea name="message" />
+          <textarea className="form_input" name="message" />
           <div className="send_button">
-            <input type="submit" value="Send" />
+            <input   type="submit" value="Send" />
           </div>
         </form>
       </section>
