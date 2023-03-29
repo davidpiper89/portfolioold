@@ -4,6 +4,15 @@ import "./Contact.css";
 
 const Contact = () => {
   const form = useRef();
+  const inputName = useRef();
+  const inputEmail = useRef();
+  const inputText = useRef();
+
+  const onSend = () => {
+    inputName.current.value = "";
+    inputEmail.current.value = "";
+    inputText.current.value = "";
+  };
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -17,8 +26,7 @@ const Contact = () => {
       )
       .then(
         (result) => {
-          console.log(result.text);
-          console.log("success");
+          alert(result.text + "- Email Sent!");
         },
         (error) => {
           console.log(error.text);
@@ -31,14 +39,36 @@ const Contact = () => {
       <section id="contact">
         <h1 className="contact_title">Contact</h1>
         <form ref={form} onSubmit={sendEmail} className="form">
-          <label>Name</label>
-          <input className="form_input" type="text" name="user_name" />
-          <label>Email</label>
-          <input className="form_input" type="email" name="user_email" />
-          <label>Message</label>
-          <textarea className="form_input" name="message" />
+          <label>
+            Name
+            <input
+              ref={inputName}
+              className="form_input"
+              type="text"
+              name="user_name"
+            />
+          </label>
+          <label>
+            Email
+            <input
+              ref={inputEmail}
+              className="form_input"
+              type="email"
+              name="user_email"
+            />
+          </label>
+          <label>
+            Message
+            <textarea ref={inputText} className="form_input" name="message" />
+          </label>
           <div className="send_button">
-            <input   type="submit" value="Send" />
+            <input
+              type="submit"
+              value="Send"
+              onClick={() => {
+                onSend();
+              }}
+            />
           </div>
         </form>
       </section>

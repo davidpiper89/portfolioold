@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.021a1814.css",
-    "main.js": "/static/js/main.c928055f.js",
+    "main.css": "/static/css/main.dea423ed.css",
+    "main.js": "/static/js/main.d5e24129.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fantasy.jpg": "/static/media/fantasy.3347c4b94686caa11da4.jpg",
     "static/media/weather.jpg": "/static/media/weather.08d9267d7c4784f708b2.jpg",
     "static/media/simpsons.jpg": "/static/media/simpsons.ff7983725de1e1f13b10.jpg",
-    "static/media/blackjack.jpg": "/static/media/blackjack.8725ee9d1248ea581c99.jpg",
-    "static/media/CV.pdf": "/static/media/CV.5909407981359870e68c.pdf",
+    "static/media/CV.pdf": "/static/media/CV.b269a32b515da3aaad55.pdf",
+    "static/media/blackjack.jpg": "/static/media/blackjack.450bb3ea105f120b5236.jpg",
+    "static/media/chat.jpg": "/static/media/chat.0aaaf36e12ebfd131173.jpg",
     "index.html": "/index.html",
-    "main.021a1814.css.map": "/static/css/main.021a1814.css.map",
-    "main.c928055f.js.map": "/static/js/main.c928055f.js.map",
+    "main.dea423ed.css.map": "/static/css/main.dea423ed.css.map",
+    "main.d5e24129.js.map": "/static/js/main.d5e24129.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.021a1814.css",
-    "static/js/main.c928055f.js"
+    "static/css/main.dea423ed.css",
+    "static/js/main.d5e24129.js"
   ]
 }

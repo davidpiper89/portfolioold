@@ -12,23 +12,21 @@ const About = () => {
           5+ year history of working within the NHS.
         </p>
         <p>
-          See their website &nbsp;:&nbsp;
-          <a className="link" href="https://www.thejump.tech/" target="_blank" rel="noreferrer">
+          See &nbsp;
+          <a
+            className="link"
+            href="https://www.thejump.tech/"
+            target="_blank"
+            rel="noreferrer"
+          >
             The Jump Digital School Website
           </a>
         </p>
         <p>
           I have learned front end skills in HTML5, CSS / SASS, JavaScipt and
-          TypeScript. Worked with a team and individually using the JavaScript
-          library 'React.js'.
-        </p>{" "}
-        <p>
-          {" "}
-          My backend skills include use of the JavaScript runtime 'Node.js' and
-          the Web Application framework 'Express'. The use of SQL to comminicate
-          with relational databases and NoSQL with a non-relational model such
-          as MongoDB. Additional knowledge of Redis in memory data structure
-          store and Firebase realtime cloud-hosted database.
+          TypeScript. Backend skills include the use Node.js, Express, SQL,
+          NoSQL. Along with others. Worked with a team and individually using
+          the JavaScript library 'React.js'.
         </p>
         <p>
           I have really enjoyed working on these projects and hope I can work on

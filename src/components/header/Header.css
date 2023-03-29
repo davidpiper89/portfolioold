@@ -38,3 +38,15 @@
   transition: var(--transition);
   background-color: var(--color-light);
 }
+
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub {
+  font-size: var(--font-size-medium);
+  color: var(--color-light);
+  padding-top: 7.5px;
+  padding-bottom: 7.5px;
+}

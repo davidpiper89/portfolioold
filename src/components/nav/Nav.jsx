@@ -25,6 +25,7 @@ const Nav = () => {
             href="https://www.linkedin.com/in/david-piper-47911225b/"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to my Linked in"
           >
             <li>
               <BsLinkedin />
@@ -34,6 +35,7 @@ const Nav = () => {
             href="https://github.com/davidpiper89"
             target="_blank"
             rel="noreferrer"
+            aria-label="link to my github"
           >
             <li>
               <BsGithub />
