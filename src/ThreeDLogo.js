@@ -12,15 +12,15 @@ function Box() {
     tex.magFilter = THREE.LinearFilter;
   });
 
-  const baseColour = 0x282c34;
+  // const baseColour = 0x282c34;
 
   const materials = [
-    new THREE.MeshBasicMaterial({ map: texture }),
-    new THREE.MeshBasicMaterial({ map: texture }),
-    new THREE.MeshBasicMaterial({ map: texture }),
-    new THREE.MeshBasicMaterial({ color: baseColour }),
-    new THREE.MeshBasicMaterial({ map: texture }),
-    new THREE.MeshBasicMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshPhongMaterial({ map: texture }),
   ];
 
   useFrame(() => {
@@ -32,6 +32,12 @@ function Box() {
     <mesh ref={mesh} material={materials}>
       <boxGeometry />
     </mesh>
+  );
+}
+
+function PointLight() {
+  return (
+    <pointLight color={0xffffff} intensity={0.9} position={[10, 10, 10]} />
   );
 }
 
@@ -47,6 +53,7 @@ function ThreeCube({ width, height }) {
       }}
     >
       <Box />
+      <PointLight />
     </Canvas>
   );
 }

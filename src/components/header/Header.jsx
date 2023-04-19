@@ -5,8 +5,8 @@ import ThreeCube from "../../ThreeDLogo.js";
 
 const Header = () => {
   const containerStyle = {
-    width: "200px",
-    height: "200px",
+    width: "300px",
+    height: "300px",
     overflow: "hidden",
   };
   return (
@@ -15,12 +15,14 @@ const Header = () => {
         <div style={containerStyle}>
           <ThreeCube />
         </div>
-        <h1 className="title">
-          <span className="sub">Hello I'm</span>
-          <span>David Piper</span>
-          <span className="sub">Software Engineer</span>
-        </h1>
-        <CTA />
+        <div className="header">
+          <h1 className="title">
+            <span className="sub">Hello I'm</span>
+            David Piper
+            <span className="sub">Software Engineer</span>
+          </h1>
+          <CTA />
+        </div>
       </section>
     </header>
   );
