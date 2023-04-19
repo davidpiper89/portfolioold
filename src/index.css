@@ -71,15 +71,14 @@ p {
 }
 
 /* Media queries (large devices) */
-@media screen and (max-width: 2000px) {
-  .container {
-    width: 1440px;
-    margin: 50px;
-  }
 
-  header {
-    margin-left: 160px;
-  }
+.container {
+  width: 1440px;
+  margin: 50px;
+}
+
+header {
+  margin-left: 160px;
 }
 
 @media screen and (max-width: 1440px) {

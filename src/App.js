@@ -4,9 +4,17 @@ import About from "./components/about/About";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import Portfolio from "./components/portfolio/Portfolio";
-import Contact from "./components/contact/Contact"
+import Contact from "./components/contact/Contact";
+
 
 function App() {
+  // useEffect(() => {
+  //   const container = document.querySelector("#three-container");
+  //   if (container) {
+  //     init3DScene(container);
+  //   }
+  // }, []);
+
   return (
     <>
       <Header />

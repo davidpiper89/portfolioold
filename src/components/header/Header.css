@@ -42,6 +42,8 @@
 .title {
   display: flex;
   flex-direction: column;
+  height: 100px;
+  overflow: none;
 }
 
 .sub {
@@ -50,3 +52,14 @@
   padding-top: 7.5px;
   padding-bottom: 7.5px;
 }
+.header {
+  display: flex;
+  gap: 20px
+}
+.name {
+  font-size: 50px;
+  vertical-align: text-top;
+}
+
+
+
