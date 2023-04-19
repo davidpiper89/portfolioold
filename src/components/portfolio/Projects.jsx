@@ -56,7 +56,7 @@ const Projects = () => {
       website: "https://blackjack.david-piper-portfolio.co.uk/",
     },
     {
-      id: 5,
+      id: 6,
       image: chat,
       title: "Chat App",
       github: "https://github.com/davidpiper89/chatapp",

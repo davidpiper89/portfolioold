@@ -45,9 +45,8 @@ function ThreeCube({ width, height }) {
       camera={{ aspect: aspectRatio, position: [0, -1, 2] }}
       onCreated={({ gl }) => {
         gl.setPixelRatio(window.devicePixelRatio);
-        gl.setSize(400, 500); // Replace 800 and 600 with your desired width and height values
+        gl.setSize(300, 300); // Replace 800 and 600 with your desired width and height values
       }}
-      invalidateFrameloop={false}
     >
       <Box />
       <PointLight />
