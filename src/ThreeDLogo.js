@@ -1,26 +1,21 @@
 import React, { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
+import { Canvas, useFrame, useLoader } from "@react-three/fiber";
 import * as THREE from "three";
-import logo from "../src/assets/logo.png";
 
 function Box() {
   const mesh = useRef();
 
-  const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load(logo, (tex) => {
-    tex.minFilter = THREE.LinearFilter;
-    tex.magFilter = THREE.LinearFilter;
-  });
-
-  // const baseColour = 0x282c34;
+  const texture = useLoader(THREE.TextureLoader, `${process.env.PUBLIC_URL}/logo.png`);
+  texture.minFilter = THREE.LinearFilter;
+  texture.magFilter = THREE.LinearFilter;
 
   const materials = [
-    new THREE.MeshPhongMaterial({ map: texture }),
-    new THREE.MeshPhongMaterial({ map: texture }),
-    new THREE.MeshPhongMaterial({ map: texture }),
-    new THREE.MeshPhongMaterial({ map: texture }),
-    new THREE.MeshPhongMaterial({ map: texture }),
-    new THREE.MeshPhongMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
+    new THREE.MeshStandardMaterial({ map: texture }),
   ];
 
   useFrame(() => {
@@ -37,7 +32,11 @@ function Box() {
 
 function PointLight() {
   return (
-    <pointLight color={0xffffff} intensity={0.9} position={[10, 10, 10]} />
+    <pointLight
+      color={0xffffff}
+      intensity={1}
+      position={[10, 10, 10]}
+    />
   );
 }
 
@@ -57,4 +56,5 @@ function ThreeCube({ width, height }) {
     </Canvas>
   );
 }
+
 export default ThreeCube;

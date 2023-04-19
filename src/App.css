@@ -6,7 +6,6 @@
   width: 160px;
 }
 
-
 header {
   margin-bottom: 25px;
 }
@@ -20,3 +19,4 @@ section {
 .link:hover {
   color: var(--color-light);
 }
+
