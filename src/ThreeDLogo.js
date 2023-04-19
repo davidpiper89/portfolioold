@@ -5,7 +5,10 @@ import * as THREE from "three";
 function Box() {
   const mesh = useRef();
 
-  const texture = useLoader(THREE.TextureLoader, `${process.env.PUBLIC_URL}/logo.png`);
+  const texture = useLoader(
+    THREE.TextureLoader,
+    `${process.env.PUBLIC_URL}/logo.png`
+  );
   texture.minFilter = THREE.LinearFilter;
   texture.magFilter = THREE.LinearFilter;
 
@@ -31,13 +34,7 @@ function Box() {
 }
 
 function PointLight() {
-  return (
-    <pointLight
-      color={0xffffff}
-      intensity={1}
-      position={[10, 10, 10]}
-    />
-  );
+  return <pointLight color={0xffffff} intensity={1} position={[10, 10, 10]} />;
 }
 
 function ThreeCube({ width, height }) {
@@ -50,6 +47,7 @@ function ThreeCube({ width, height }) {
         gl.setPixelRatio(window.devicePixelRatio);
         gl.setSize(width, height);
       }}
+      invalidateFrameloop={false}
     >
       <Box />
       <PointLight />
