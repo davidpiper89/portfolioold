@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.18d5bea5.css",
-    "main.js": "/static/js/main.a8ba5f5b.js",
+    "main.css": "/static/css/main.a25b5396.css",
+    "main.js": "/static/js/main.0fdd9a93.js",
     "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
     "static/media/fantasy.jpg": "/static/media/fantasy.3347c4b94686caa11da4.jpg",
     "static/media/simpsons.jpg": "/static/media/simpsons.ff7983725de1e1f13b10.jpg",
     "static/media/weather.jpg": "/static/media/weather.119f1947cccf25ee7f86.jpg",
-    "static/media/logo.png": "/static/media/logo.a9a2968cad9835874b33.png",
     "static/media/CV.pdf": "/static/media/CV.b269a32b515da3aaad55.pdf",
     "static/media/blackjack.jpg": "/static/media/blackjack.450bb3ea105f120b5236.jpg",
     "static/media/chat.jpg": "/static/media/chat.0aaaf36e12ebfd131173.jpg",
     "index.html": "/index.html",
-    "main.18d5bea5.css.map": "/static/css/main.18d5bea5.css.map",
-    "main.a8ba5f5b.js.map": "/static/js/main.a8ba5f5b.js.map",
+    "main.a25b5396.css.map": "/static/css/main.a25b5396.css.map",
+    "main.0fdd9a93.js.map": "/static/js/main.0fdd9a93.js.map",
     "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.18d5bea5.css",
-    "static/js/main.a8ba5f5b.js"
+    "static/css/main.a25b5396.css",
+    "static/js/main.0fdd9a93.js"
   ]
 }
