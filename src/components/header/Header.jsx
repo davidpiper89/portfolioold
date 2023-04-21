@@ -4,15 +4,11 @@ import CTA from "./CTA";
 import ThreeCube from "../../ThreeDLogo.js";
 
 const Header = () => {
-  const containerStyle = {
-    width: "300px",
-    height: "300px",
-    overflow: "hidden",
-  };
+
   return (
     <header>
       <section className="header_container">
-        <div style={containerStyle}>
+        <div className="canvas_container">
           <ThreeCube />
         </div>
         <div className="header">

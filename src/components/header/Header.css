@@ -63,3 +63,9 @@
   vertical-align: text-top;
 }
 
+.canvas_container {
+  width: 240px;
+  height: 200px;
+  overflow: visible;
+  margin-top: 30px;
+}

@@ -29,10 +29,10 @@ function ThreeCube({ width, height }) {
   // Render the 3D scene using the Canvas component from react-three/fiber
   return (
     <Canvas
-      camera={{ aspect: aspectRatio, position: [0, 2, -2] }}
+      camera={{ aspect: aspectRatio, position: [0.1, 2.2, 0.65] }}
       onCreated={({ gl }) => {
         gl.setPixelRatio(window.devicePixelRatio);
-        gl.setSize(250, 250);
+        gl.setSize(200, 200);
       }}
     >
       <Model />
