@@ -2,7 +2,11 @@
   display: flex;
 }
 
-.header {display: flex; flex-direction: column; justify-content: center;}
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
 .cta {
   display: flex;
@@ -58,3 +62,4 @@
   font-size: 50px;
   vertical-align: text-top;
 }
+
