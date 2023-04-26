@@ -17,21 +17,30 @@ const Contact = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_t9ibtap",
-        "template_asbrub7",
-        form.current,
-        "OeQvuWjJmE21Mn45M"
-      )
-      .then(
-        (result) => {
-          alert(result.text + "- Email Sent!");
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+    if (
+      inputName.current.value === "" ||
+      inputEmail.current.value === "" ||
+      inputText.current.value === ""
+    ) {
+      alert("Please fill in all the fields before sending");
+    } else {
+      emailjs
+        .sendForm(
+          "service_t9ibtap",
+          "template_asbrub7",
+          form.current,
+          "OeQvuWjJmE21Mn45M"
+        )
+        .then(
+          (result) => {
+            alert(result.text + "- Email Sent!");
+            onSend();
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    }
   };
 
   return (
@@ -62,13 +71,7 @@ const Contact = () => {
             <textarea ref={inputText} className="form_input" name="message" />
           </label>
           <div className="send_button">
-            <input
-              type="submit"
-              value="Send"
-              onClick={() => {
-                onSend();
-              }}
-            />
+            <input type="submit" value="Send" />
           </div>
         </form>
       </section>
