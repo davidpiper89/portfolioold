@@ -64,8 +64,34 @@
 }
 
 .canvas_container {
-  width: 240px;
+  width: 200px;
   height: 200px;
   overflow: visible;
-  margin-top: 30px;
+  padding-bottom: 50px;
+  padding-right: 10px;
 }
+
+.header_nav_cont {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  cursor: pointer;
+  align-items: center;
+}
+
+ul > li > a {
+  padding: 5px;
+  color: var(--color-light);
+}
+
+ul > li > a:hover {
+  
+  color: var(--color-normal);
+}
+.phone, .email {
+  font-size: 14px;
+}
+
+
+
+

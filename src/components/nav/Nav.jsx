@@ -4,8 +4,6 @@ import { BsLinkedin } from "react-icons/bs";
 import { BsGithub } from "react-icons/bs";
 
 const Nav = () => {
-
-  const navLinks = []
   return (
     <>
       <ul className="nav_list">

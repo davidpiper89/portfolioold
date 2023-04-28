@@ -2,11 +2,12 @@ import React from "react";
 import "./Header.css";
 import CTA from "./CTA";
 import ThreeCube from "../../ThreeDLogo.js";
+import HeaderNav from "./HeaderNav";
 
 const Header = () => {
-
   return (
     <header>
+      <HeaderNav />
       <section className="header_container">
         <div className="canvas_container">
           <ThreeCube />

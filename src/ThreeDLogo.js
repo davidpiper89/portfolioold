@@ -1,6 +1,5 @@
 import React, { useRef } from "react";
-import { Canvas, useFrame, useLoader } from "@react-three/fiber";
-import * as THREE from "three";
+import { Canvas, useFrame } from "@react-three/fiber";
 import { useGLTF } from '@react-three/drei';
 
 function Model() {
@@ -29,7 +28,7 @@ function ThreeCube({ width, height }) {
   // Render the 3D scene using the Canvas component from react-three/fiber
   return (
     <Canvas
-      camera={{ aspect: aspectRatio, position: [0.1, 2.2, 0.65] }}
+      camera={{ aspect: aspectRatio, position: [0, 2.4, 0.5] }}
       onCreated={({ gl }) => {
         gl.setPixelRatio(window.devicePixelRatio);
         gl.setSize(200, 200);
