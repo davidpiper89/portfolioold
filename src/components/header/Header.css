@@ -77,6 +77,7 @@
   gap: 10px;
   cursor: pointer;
   align-items: center;
+  padding: 7.5px;
 }
 
 ul > li > a {
@@ -84,8 +85,7 @@ ul > li > a {
   color: var(--color-light);
 }
 
-ul > li > a:hover {
-  
+ul > li > a:hover { 
   color: var(--color-normal);
 }
 .phone, .email {

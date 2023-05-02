@@ -120,4 +120,7 @@ p {
   .open {
     visibility: visible;
   }
+  .hide-on-mobile {
+    display: none;
+  }
 }

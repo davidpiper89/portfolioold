@@ -13,14 +13,14 @@ const HeaderNav = () => {
   return (
     <>
       <ul className="header_nav_cont">
-        <li className={`email ${toggle ? "open" : ""}`}>
-          <MdEmail />
+        <li className={`email ${toggle ? "open" : ""} `}>
+          <MdEmail className="hide-on-mobile" />
           <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
             {email}
           </a>
         </li>
-        <li className={`phone ${toggle ? "open" : ""}`}>
-        <BsFillTelephoneFill />
+        <li className={`phone ${toggle ? "open" : ""} `}>
+          <BsFillTelephoneFill className="hide-on-mobile" />
           <a
             href={`tel:${phoneNumber}`}
             target="_blank"
