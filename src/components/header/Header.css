@@ -85,13 +85,17 @@ ul > li > a {
   color: var(--color-light);
 }
 
-ul > li > a:hover { 
+.contact_link {
+  color: var(--color-light);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.contact_link:hover {
   color: var(--color-normal);
 }
-.phone, .email {
+
+.phone,
+.email {
   font-size: 14px;
 }
-
-
-
-

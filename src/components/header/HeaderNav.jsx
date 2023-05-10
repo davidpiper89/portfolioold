@@ -5,6 +5,20 @@ import "./Header.css";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 
+const ContactInfo = ({ icon: Icon, link, value, className }) => (
+  <li className={className}>
+    <Icon className="hide-on-mobile" />
+    <a
+      className="contact_link"
+      href={link}
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      {value}
+    </a>
+  </li>
+);
+
 const HeaderNav = () => {
   const [toggle, setToggle] = useState(false);
   const email = "davidpiper1989@gmail.com";
@@ -13,22 +27,18 @@ const HeaderNav = () => {
   return (
     <>
       <ul className="header_nav_cont">
-        <li className={`email ${toggle ? "open" : ""} `}>
-          <MdEmail className="hide-on-mobile" />
-          <a href={`mailto:${email}`} target="_blank" rel="noopener noreferrer">
-            {email}
-          </a>
-        </li>
-        <li className={`phone ${toggle ? "open" : ""} `}>
-          <BsFillTelephoneFill className="hide-on-mobile" />
-          <a
-            href={`tel:${phoneNumber}`}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            {phoneNumber}
-          </a>
-        </li>
+        <ContactInfo
+          icon={MdEmail}
+          link={`mailto:${email}`}
+          value={email}
+          className={`email ${toggle ? "open" : ""}`}
+        />
+        <ContactInfo
+          icon={BsFillTelephoneFill}
+          link={`tel:${phoneNumber}`}
+          value={phoneNumber}
+          className={`phone ${toggle ? "open" : ""}`}
+        />
 
         <img
           src={toggle ? close : logo}

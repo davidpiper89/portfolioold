@@ -1,46 +1,39 @@
 import React from "react";
 import "./Nav.css";
-import { BsLinkedin } from "react-icons/bs";
-import { BsGithub } from "react-icons/bs";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
+
+const NavLink = ({ href, children, ...props }) => (
+  <a className="nav_link" href={href} {...props}>
+    <li>{children}</li>
+  </a>
+);
 
 const Nav = () => {
   return (
     <>
       <ul className="nav_list">
-        <a href="#about">
-          <li>About</li>
-        </a>
-        <a href="#portfolio">
-          <li>Portfolio</li>
-        </a>
-        <a href="#other_projects">
-          <li>Other Projects</li>
-        </a>
-        <a href="#contact">
-          <li>Contact </li>
-        </a>
+        <NavLink href="#about">About</NavLink>
+        <NavLink href="#portfolio">Portfolio</NavLink>
+        <NavLink href="#other_projects">Other Projects</NavLink>
+        <NavLink href="#contact">Contact</NavLink>
 
         <ul className="icons">
-          <a
+          <NavLink
             href="https://www.linkedin.com/in/david-piper-47911225b/"
             target="_blank"
             rel="noreferrer"
-            aria-label="link to my Linked in"
+            aria-label="link to my LinkedIn"
           >
-            <li>
-              <BsLinkedin />
-            </li>
-          </a>
-          <a
+            <BsLinkedin />
+          </NavLink>
+          <NavLink
             href="https://github.com/davidpiper89"
             target="_blank"
             rel="noreferrer"
-            aria-label="link to my github"
+            aria-label="link to my GitHub"
           >
-            <li>
-              <BsGithub />
-            </li>
-          </a>
+            <BsGithub />
+          </NavLink>
         </ul>
       </ul>
     </>

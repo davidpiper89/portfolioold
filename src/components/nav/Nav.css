@@ -3,8 +3,13 @@
   padding-bottom: 4px;
 }
 
-li:hover {
-  color: var(--color-light);
+.nav_link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.nav_link:hover {
+  color: var(--color-light)
 }
 
 .icons > a > li {
@@ -17,5 +22,3 @@ li:hover {
   position: sticky;
   top: 10px;
 }
-
-
